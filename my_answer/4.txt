@@ -1,0 +1,1 @@
+ls | xargs -I@ sh -c 'echo @; cat @' | xargs -n2 echo | sed -n '/[0-9]* 10$/p' | awk '{ print $1 }' | xargs rm

@@ -1,0 +1,1 @@
+ls *.png | sed s/\.png// | xargs -P4 -I{} convert {}.png {}.jpg

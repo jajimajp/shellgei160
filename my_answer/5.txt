@@ -1,0 +1,1 @@
+cat ntp.conf | grep '^pool' | awk '{ print $2 }'
