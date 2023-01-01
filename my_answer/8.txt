@@ -1,0 +1,1 @@
+cat access.log | sed -E 's/.* \[.*:([0-9]*):.*:.*\]/\1/g' | awk '{ if($1<12){am++}else{pm++}} END { printf("AM: %d\nPM: %d\n", am, pm) }'
