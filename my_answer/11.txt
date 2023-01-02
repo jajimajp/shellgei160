@@ -1,0 +1,1 @@
+cat gijiroku.txt | sed -e 's/すず/鈴木/' -e 's/さと/佐藤/' -e 's/やま/山田/' | xargs -n2 echo | awk '{printf "%s:%s\n\n", $1, $2}'
